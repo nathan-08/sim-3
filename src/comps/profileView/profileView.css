@@ -1,0 +1,50 @@
+#profile-view{
+    background-color:#ddd;
+}
+#profile-view-sub-header{
+    margin: 0 20vw;
+    /* background-color:white; */
+    min-height:80vh;
+    z-index:-1;
+    border:1px solid gray;
+}
+
+#profile-info-container{
+    height:120px;
+    margin-top:12px;
+    display:flex;
+    justify-content:space-between;
+    color: black;
+    background-color:white;
+    width:100%;
+    border:1px solid gray;
+}
+#user-data{
+    margin-top:12px;
+    height:50vh;
+    background-color:white;
+    display:grid;
+    grid-template-columns:2.5fr 1fr 2.5fr;grid-auto-rows:minmax(200px,auto);
+}
+
+#user-data > div{
+    color:black;
+}
+#user-data input{
+    border:1px solid gray;
+    padding:3px;
+}
+#user-data > div:nth-child(1){
+    justify-self:end;
+    display:flex;
+    flex-direction:column;
+    
+}
+#user-data p {
+    padding: 12px 0 8px 0;
+}
+#user-data > div:nth-child(2){
+}
+#user-data > div:nth-child(3){
+    justify-self:start;
+}
