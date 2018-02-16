@@ -1,0 +1,35 @@
+#login-view{
+    background-image: linear-gradient(99deg, #ff70a6, #ff9770 40%,  #ffd670 73%, #e9ff70);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#helo-block{
+    height:220px;
+    width:300px;
+    border-radius: 8px;
+    background-image: linear-gradient(128deg, rgba(64, 61, 57, 0.1), rgba(255, 255, 255, 0.2));
+    box-shadow: 0 14px 28px 0 rgba(0,0,0,0.25), 0 10px 10px 0 rgba(0,0,0,0.26);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+
+}
+#helo-block > input, input::placeholder {
+    background-color: #403d39;
+    padding:4px;
+    text-align:center;
+    color:white;
+}
+#helo-block > h1 {
+    font-size: 48px;
+    font-weight:700;
+    margin-bottom:13px;
+}
+#helo-block > img{
+    height:60px;
+    margin-bottom:13px;
+}

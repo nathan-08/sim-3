@@ -1,0 +1,49 @@
+#dashboard-view{
+    min-height: 100vh;
+    background-color:#ddd;
+    
+}
+#dashboard-view-sub-header{
+    margin: 0 20vw;
+    /* background-color:white; */
+    min-height:90vh;
+    z-index:-1;
+    border:1px solid gray;
+}
+.user-info-container{
+    height:120px;
+    margin-top:12px;
+    display:flex;
+    justify-content:space-between;
+    color: black;
+}
+.user-info-container > div{
+    background-color:white;
+    display:flex;
+    justify-content:space-between;
+}
+.user-info-container > div:nth-child(1){
+    width: 35%;    
+    border:1px solid gray;
+}
+.user-info-container > div:nth-child(2){
+    width: 62%;
+}
+.friends-container{
+    padding: 8px;
+    color:black;
+    margin-top:12px;
+    background-color:white;
+    min-height:70vh;
+}
+.friends-container > div{
+    display:flex;
+    justify-content:space-between;
+}
+.friends-container span{
+    display:flex;
+}
+.friends-container > div:nth-child(2){
+    display: flex;
+    justify-content:center;
+}
