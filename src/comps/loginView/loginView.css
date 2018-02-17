@@ -18,11 +18,8 @@
     flex-direction:column;
 
 }
-#helo-block > input, input::placeholder {
-    background-color: #403d39;
-    padding:4px;
-    text-align:center;
-    color:white;
+#helo-block > button{
+    padding: .4em 3em;
 }
 #helo-block > h1 {
     font-size: 48px;

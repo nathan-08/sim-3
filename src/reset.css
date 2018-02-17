@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-input, input:focus {
+input, input:focus, button {
 	border:none;
     background-image:none;
     background-color:transparent;

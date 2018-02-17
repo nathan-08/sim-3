@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './reset.css';
 import './App.css';
+import './buttons.css';
 import LoginView from './comps/loginView/LoginView';
 import { Route } from 'react-router-dom';
 import DashboardView from './comps/dashboardView/DashboardView';
+import ProfileView from './comps/profileView/ProfileView';
 
 class App extends Component {
   render() {
@@ -11,6 +13,7 @@ class App extends Component {
       <div className="App">
         <Route exact path="/" component={LoginView}/>
         <Route path="/dashboard" component={DashboardView}/>
+        <Route path="/profile" component={ProfileView}/>
       </div>
     );
   }
