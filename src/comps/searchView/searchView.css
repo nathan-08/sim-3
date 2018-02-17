@@ -1,0 +1,31 @@
+#search-view{
+    min-height:100vh;
+    background-color:#ddd;
+}
+#search-view-sub-header{
+    margin: 14px 20vw;
+    /* background-color:white; */
+    min-height:80vh;
+    z-index:-1;
+    border:1px solid gray;
+    background-color:white;
+}
+#search-box-container{
+    display:flex;
+    justify-content:center;
+    justify-content: space-around;
+    align-items:center;
+    border:1px solid gray;
+    height:80px;
+}
+#search-box-container > input{
+    border:1px solid gray;
+    padding:.2em;
+}
+#search-box-container > button{
+    padding:.2em 1.5em;
+}
+#matching-users-container{
+    border:1px solid pink;
+    color:maroon;
+}
