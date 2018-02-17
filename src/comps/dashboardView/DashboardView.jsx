@@ -14,7 +14,7 @@ export default class DashboardView extends React.Component {
                             <img src='#' alt="user-pic" />
                             <div>
                                 <div>User Name</div>
-                                <button>logout</button>
+                                <button className="button-white" onClick={()=>this.props.history.push('/profile')}>Edit Profile</button>
                             </div>
                         </div>
                         <div>

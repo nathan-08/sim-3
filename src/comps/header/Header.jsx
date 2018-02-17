@@ -9,10 +9,12 @@ export default class Header extends React.Component{
         return(
             <div id='header'>
                 <div>Helo
-                <Link to='/'><img src={home} alt="home-icon"/></Link>
-                <img src={search} alt="search-icon"/></div> 
-                <div>Dashboard</div> 
-                <div>Logout</div> 
+                    <Link to='/'><img src={home} alt="home-icon"/></Link>
+                    <Link to="/search"><img src={search} alt="search-icon"/></Link>                
+                </div> 
+
+                <Link to="/dashboard">Dashboard</Link> 
+                <Link to="/">Logout</Link> 
             </div>
         )
     }
