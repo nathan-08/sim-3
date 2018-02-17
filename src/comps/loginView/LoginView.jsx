@@ -11,7 +11,7 @@ export default class LoginView extends React.Component{
                 <div id="helo-block">
                     <img src={logo} alt="logo"/>
                     <h1>Helo</h1>
-                    <button className="button-grey" onClick={()=>this.props.history.push('/dashboard')}>Login / Register</button>
+                    <button onClick={()=>this.props.history.push('/dashboard')}>Login / Register</button>
                 </div>
             </div>
         )
