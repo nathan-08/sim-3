@@ -1,0 +1,19 @@
+.button-white{
+    border-radius: 1px;
+    background-image: radial-gradient(circle at 50% 0, #ffffff, #f1eceb);
+    border:solid 1px #ccc3c3;
+    padding:3px;
+}
+.button-grey{
+    border-radius:1px;
+    background-image:radial-gradient(circle at 50% -46%, #737373, #403d39);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.2);
+    color:white;
+    padding:3px;
+}
+.button-pink{
+    border-radius:1px;
+    background-image: radial-gradient(circle at 50% -46%, #ff9770, #ff7a6e);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.2);
+    padding:3px;
+}

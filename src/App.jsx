@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './reset.css';
 import './App.css';
+import './buttons.css';
 import LoginView from './comps/loginView/LoginView';
 import { Route } from 'react-router-dom';
 import DashboardView from './comps/dashboardView/DashboardView';

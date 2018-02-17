@@ -15,8 +15,8 @@ export default class ProfileView extends React.Component{
                                 
                             </div>
                             <div>
-                                <button>Update</button>
-                                <button>Cancel</button>
+                                <button className="button-grey">Update</button>
+                                <button className="button-white">Cancel</button>
                             </div>
                         </div>
                         <div id="user-data">
