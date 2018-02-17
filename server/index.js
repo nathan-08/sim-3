@@ -5,8 +5,8 @@ const express = require('express'),
       massive = require('massive'),
       passport = require ('passport'),
       Auth0Stratgey = require('passport-auth0'),
-      app = express(),
-      port = 3018;
+      users = require('./controllers/users')
+      app = express();
 
       require('dotenv').config()
 
@@ -31,7 +31,16 @@ massive(process.env.DB_CONNECTION).then(db => {
 app.use(passport.initialize())
 app.use(passport.session())
 
-
+passport.use(new Auth0Stratgey({
+    domain: 'orio.auth0.com',
+    clientID: process.env.AUTH_CLIENT_ID,
+    clientSecret: process.env.AUTH_CLIENT_SECRET,
+    callbackURL : process.env.AUTH_CALLBACK
+}, (accessToken, refreshToken, extraParams, profile, done) => {
+    const db = app.get('db')
+    let userData = profile._json,
+    auth_id = userData.user.split('|')[1]
+}))
 
 
 // ========== ENDPOINTS ========== //
@@ -39,12 +48,12 @@ app.use(passport.session())
 // === GET REQUESTS === //
 
 app.get('/api/friend/list', )
-app.get('/api/user/list', )  
-
+app.get('/api/user/list', users.getAllUsers )  
 app.get('/api/user/search', )
 
 
 // === PUT REQUESTS === //
+
 app.put('/api/user/update/:id', )
 
 
@@ -56,6 +65,6 @@ app.post('/api/recommended', )
 app.post('/api/recommdended/add', )
 
 
-app.listen(port, () => {
-    console.log(`listening on port ${port}`)
+app.listen(process.env.SERVER_PORT, () => {
+    console.log(`Running like a boss on port ${process.env.SERVER_PORT}`)
 })
